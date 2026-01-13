@@ -78,9 +78,13 @@ function Navbar() {
             {item}
           </a>
         ))}
-        <div className="nav-mobile-link">
-          Resume <Download />
-        </div>
+        <a
+            href="/Resume.pdf"
+            download="Idowu-Feranmi-Resume.pdf"
+            className="nav-mobile-link"
+          >
+            Resume <Download size={16} />
+          </a>
       </motion.nav>
 
     </header>
