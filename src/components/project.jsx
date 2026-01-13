@@ -5,20 +5,24 @@ function Projects() {
     {
       id: 1,
       title: "NCCF Ikom Zone",
-      description: "Official website for NCCF Ikom Zone, a Christian religious organization.",
-      link: "https://nccf-ikom-zone.vercel.app/",
+      description: "A responsive informational site for the Nigeria Christian Corpers’ Fellowship (Ikom Zone), built with React to deliver fellowship details, contacts, and community presence.",
+      stack: ["React", "JavaScript", "CSS", "HTML"],
+      live: "https://nccf-ikom-zone.vercel.app/",
     },
     {
-      id: 2,
-      title: "Bugetify",
-      description: "website for calculating and keeping track of income and expenses.",
-      link: "https://budgety-alpha.vercel.app/",
-    },
+    key: 2,
+    title: "Budget Tracker",
+    description: "A web app for tracking income and expenses with persistent state.",
+    stack: ["React", "CSS", "LocalStorage"],
+    live: "https://budgety-alpha.vercel.app/",
+    github: "https://github.com/feranmi-idowu/budgety",
+  },
     {
       id: 3,
       title: "Pig Game",
-      description: "website Application game",
-      link: "https://pigggame.vercel.app/",
+      description: "A two-player dice game built with vanilla JavaScript, focusing on game logic, state management, and DOM manipulation.",
+      stack: ["JavaScript", "HTML", "CSS"],
+      live: "https://pigggame.vercel.app/",
     },
   ];
 
@@ -39,6 +43,13 @@ function Projects() {
             >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <div className="stack">
+                {project.stack.map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+
+              <small>Click to view live project →</small>
             </motion.a>
           ))}
         </div>

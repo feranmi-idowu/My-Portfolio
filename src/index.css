@@ -232,6 +232,20 @@ h2 {
   border: 2px #a5b4fc;
   border-radius: 1rem;
 }
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.stack span {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+}
 
 
 /* CONTACT SECTION */
@@ -269,13 +283,13 @@ h2 {
 }
 
 
-footer {
+/*footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.85rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
-}
+}*/
 
 footer {
   text-align: center;
