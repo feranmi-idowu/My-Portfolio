@@ -43,9 +43,13 @@ function Navbar() {
               {item}
             </a>
           ))}
-          <div className="nav-link">
-          Resume <Download />
-          </div>
+          <a
+            href="/Resume.pdf"
+            download="Idowu-Feranmi-Resume.pdf"
+            className="nav-link"
+          >
+            Resume <Download size={16} />
+          </a>
         </nav>
         
         {/* MOBILE MENU BUTTON */}

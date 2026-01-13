@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Github } from "lucide-react";
 
 function Projects() {
   const projects = [
@@ -8,6 +9,7 @@ function Projects() {
       description: "A responsive informational site for the Nigeria Christian Corpers’ Fellowship (Ikom Zone), built with React to deliver fellowship details, contacts, and community presence.",
       stack: ["React", "JavaScript", "CSS", "HTML"],
       live: "https://nccf-ikom-zone.vercel.app/",
+      github: "https://github.com/feranmi-idowu/NCCF-IkomZone",
     },
     {
     key: 2,
@@ -22,7 +24,8 @@ function Projects() {
       title: "Pig Game",
       description: "A two-player dice game built with vanilla JavaScript, focusing on game logic, state management, and DOM manipulation.",
       stack: ["JavaScript", "HTML", "CSS"],
-      live: "https://pigggame.vercel.app/",
+      live: "https://pigggame.vercel.app/" ,
+      github: "https://github.com/feranmi-idowu/budgety",
     },
   ];
 
@@ -33,7 +36,7 @@ function Projects() {
 
         <div className="projects-grid">
           {projects.map((project) => (
-            <motion.a
+            <motion
               key={project.id}
               href={project.link}
               target="_blank"
@@ -48,9 +51,9 @@ function Projects() {
                   <span key={tech}>{tech}</span>
                 ))}
               </div>
-
-              <small>Click to view live project →</small>
-            </motion.a>
+              <p>Github link <a href={project.github}></a><Github/></p>
+              <a >Click to view live project →</a>
+            </motion>
           ))}
         </div>
       </div>
