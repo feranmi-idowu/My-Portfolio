@@ -246,7 +246,12 @@ h2 {
   border-radius: 999px;
   color: var(--muted);
 }
-
+.project-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
 
 /* CONTACT SECTION */
 .contact {
