@@ -68,7 +68,7 @@ function Navbar() {
         animate={isMenuOpen ? "open" : "closed"}
         variants={mobileMenu}
       >
-        {navItems.map((item) => (
+        {navItems.map((item) => ( //navItems.map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}

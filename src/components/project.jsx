@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 function Projects() {
   const projects = [
@@ -38,7 +38,7 @@ function Projects() {
           {projects.map((project) => (
             <motion
               key={project.id}
-              href={project.link}
+              
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -51,8 +51,10 @@ function Projects() {
                   <span key={tech}>{tech}</span>
                 ))}
               </div>
-              <p>Github link <a href={project.github}></a><Github/></p>
-              <a >Click to view live project →</a>
+              <div>
+                <a href={project.github}>Github link</a><Github size={18}/>
+              </div>
+              <a href={project.live}>Click to view live project <ExternalLink size={18}/></a>
             </motion>
           ))}
         </div>
