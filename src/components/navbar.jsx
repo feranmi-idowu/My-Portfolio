@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Code, CodeXml } from "lucide-react";
 
 /* 👉 Animation configuration */
 const mobileMenu = {
@@ -30,7 +30,7 @@ function Navbar() {
       <div className="navbar-inner">
 
         {/* LOGO */}
-        <span className="logo">MyPortfolio</span>
+        <span className="logo"><Code size={25} />INTERFERONS<CodeXml size={28}/></span>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="nav-desktop">
