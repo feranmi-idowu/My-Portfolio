@@ -7,7 +7,7 @@ function Projects() {
       id: 1,
       title: "NCCF Ikom Zone",
       description: "A responsive informational site for the Nigeria Christian Corpers’ Fellowship (Ikom Zone), built with React to deliver fellowship details, contacts, and community presence.",
-      stack: ["React", "JavaScript", "CSS", "HTML"],
+      stack: ["React", "JavaScript", "CSS", "HTML5"],
       live: "https://nccf-ikom-zone.vercel.app/",
       github: "https://github.com/feranmi-idowu/NCCF-IkomZone",
     },
@@ -26,6 +26,14 @@ function Projects() {
       stack: ["JavaScript", "HTML", "CSS"],
       live: "https://pigggame.vercel.app/" ,
       github: "https://github.com/feranmi-idowu/budgety",
+    },
+    {
+      id: 4,
+      title: "Keeper App",
+      description: "KeeperApp is a React-based note-taking application that demonstrates core frontend concepts including component-driven architecture, state management, controlled form inputs, and dynamic list rendering.",
+      stack: ["React","JavaScript", "HTML5", "CSS"],
+      live: "https://note-keeper-liart-eight.vercel.app/" ,
+      github: "https://github.com/feranmi-idowu/NoteKeeper",
     },
   ];
 
