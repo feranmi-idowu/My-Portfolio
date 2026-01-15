@@ -253,6 +253,10 @@ h2 {
   cursor: pointer;
 }
 
+.project-link a:hover {
+  color: #818cf8;           /* indigo-400 */
+}
+
 /* CONTACT SECTION */
 .contact {
   padding-top: 5rem;        /* py-20 */
