@@ -30,7 +30,7 @@ function Navbar() {
       <div className="navbar-inner">
 
         {/* LOGO */}
-        <span className="logo"><Code size={25} />INTERFERONS<CodeXml size={28}/></span>
+        <span className="logo"><Code size={25}></Code>INTERFERONS<CodeXml size={25}/></span>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="nav-desktop">
