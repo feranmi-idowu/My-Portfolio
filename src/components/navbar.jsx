@@ -79,7 +79,7 @@ function Navbar() {
           </a>
         ))}
         <a
-            href="/Resume.pdf"
+            href="/ResumeFrontend.pdf"
             download="Idowu-Feranmi-Resume.pdf"
             className="nav-mobile-link"
           >
