@@ -43,8 +43,8 @@ const resentProjects = [
       description: "Chuks- kitchen is a food ordering web application that allows users to browse meals, add items to their cart, and place orders through a simple user-friendly interface. ",
       stack: ["React","JavaScript", "HTML5", "CSS"],
       live: "https://chuks-truemind-mwht.vercel.app/" ,
-      github: "https://github.com/feranmi-idowu/NoteKeeper",
-      note: "Available only on desktop,",
+      github: "https://github.com/feranmi-idowu/Chuks-truemind",
+      note: "Available only on desktop, mobile screen next",
     },
 ]
   return (
@@ -54,22 +54,25 @@ const resentProjects = [
         <div className="projects-grid">
           {resentProjects.map((resentprojects) => (
             <motion.div 
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 300 }}>
               <h3>{resentprojects.title}</h3>
               <p className="description">{resentprojects.description}</p>
               <div className="stack">
                 {resentprojects.stack.map((tech) => (
-                  <span key={tech}>{tech}</span>
+                  <span key={tech}>{tech}</span>                  
                 ))}
+              </div>
+              <div className="stack">
+                <p className="description">{resentprojects.note}</p>
               </div>
               <div className="project-link">
                 <motion.a 
                 href={resentprojects.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1. }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }} >Github link <Github size={18}/></motion.a>
               </div>
@@ -77,7 +80,7 @@ const resentProjects = [
               <motion.a href={resentprojects.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }} 
               >Click to view live project <ExternalLink size={18}/></motion.a>
