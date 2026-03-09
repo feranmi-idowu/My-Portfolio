@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      © {new Date().getFullYear()} MyPortfolio
+      © {new Date().getFullYear()} Interferons
     </footer>
   );
 }

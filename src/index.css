@@ -229,9 +229,13 @@ h2 {
 .projects-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
 }
-
+.description {
+  min-width: 20px;
+  box-sizing: content-box;
+}
 .projects-grid :hover {
   color: #818cf8;           /* indigo-400 */
 }
