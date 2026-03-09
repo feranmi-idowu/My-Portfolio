@@ -45,7 +45,7 @@ const resentProjects = [
       live: "https://chuks-truemind-mwht.vercel.app/" ,
       github: "https://github.com/feranmi-idowu/NoteKeeper",
       note: "Available only on desktop,",
-    }
+    },
 ]
   return (
     <section id="projects">
