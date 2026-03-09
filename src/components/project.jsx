@@ -48,8 +48,8 @@ const resentProjects = [
     },
 ]
   return (
-    <section id="projects">
-      <div className="container">
+    <section id="projects"className="projects">
+      <div className="container" >
         <h2>Ongoing Projects</h2>
         <div className="projects-grid">
           {resentProjects.map((resentprojects) => (

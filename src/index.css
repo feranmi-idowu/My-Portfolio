@@ -46,6 +46,8 @@ h2 {
 .container {
   max-width: 1100px;
   margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 /* APP */
@@ -66,6 +68,7 @@ h2 {
   backdrop-filter: blur(10px);
   z-index: 50;
 }
+
 
 /* INNER */
 .navbar-inner {
@@ -224,7 +227,7 @@ h2 {
   font-size: 1rem;
 }
 
-
+.container
 /* Projects */
 .projects-grid {
   display: grid;
