@@ -37,15 +37,27 @@ function Projects() {
     },
   ];
 const resentProjects = [
-    {
+  {
       id: 1,
+      title: "InvoiceGen",
+      description: "A responsive invoice generation app built with React. Users can fill in client details, add line items with quantities and unit prices, and instantly generate a professional invoice — all in the browser ",
+      stack: ["React (components, useState)","JavaScript", "jsPDF" , "HTML5", "CSS"],
+      live: "http://invoice-xi-one.vercel.app/" ,
+      github: "https://github.com/feranmi-idowu/Invoice",
+      //note: "Available only on desktop, mobile screen next",
+  },
+
+
+  {
+      id: 2,
       title: "Chuks Kitchen",
       description: "Chuks- kitchen is a food ordering web application that allows users to browse meals, add items to their cart, and place orders through a simple user-friendly interface. ",
       stack: ["React","JavaScript", "HTML5", "CSS"],
       live: "https://chuks-truemind-mwht.vercel.app/" ,
       github: "https://github.com/feranmi-idowu/Chuks-truemind",
       note: "Available only on desktop, mobile screen next",
-    },
+  },
+    
 ]
   return (
     <section id="projects"className="projects">

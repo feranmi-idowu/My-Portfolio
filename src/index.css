@@ -227,7 +227,6 @@ h2 {
   font-size: 1rem;
 }
 
-.container
 /* Projects */
 .projects-grid {
   display: grid;
@@ -238,6 +237,7 @@ h2 {
 .description {
   min-width: 20px;
   box-sizing: content-box;
+  max-width: 320;
 }
 .projects-grid :hover {
   color: #818cf8;           /* indigo-400 */
