@@ -44,7 +44,6 @@ const resentProjects = [
       stack: ["React (components, useState)","JavaScript", "jsPDF" , "HTML5", "CSS"],
       live: "http://invoice-xi-one.vercel.app/" ,
       github: "https://github.com/feranmi-idowu/Invoice",
-      //note: "Available only on desktop, mobile screen next",
   },
 
 

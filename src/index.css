@@ -159,6 +159,7 @@ h2 {
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  gap: 3rem;
 }
 
 /* INNER CONTENT */
@@ -196,6 +197,11 @@ h2 {
     font-size: 1.25rem;            /* md:text-xl */
   }
 }
+.hero-image img {
+  max-width: 400px;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 5%;  /* Makes the image circular */
+  object-fit: cover;}
 
 /* ANIMATED TEXT */
 .hero-animated-text {

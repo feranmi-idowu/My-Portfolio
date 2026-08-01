@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Images from "./images";
 
 function Hero() {
   return (
@@ -27,6 +28,9 @@ function Hero() {
           className="hero-animated-text">
             I build clean, responsive, production-ready web apps.
         </motion.p>
+  </div>
+  <div className="hero-image">
+  <img src={Images.overPics} alt="About me" />
   </div>
 </section>
 
