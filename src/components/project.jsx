@@ -37,31 +37,59 @@ function Projects() {
       github: "https://github.com/feranmi-idowu/NoteKeeper",
     },
   ];
+
+  const USERS = [
+    {
+      id: "user_1",
+      email: "admin@sohcahtoa.com",
+      password: "admin123",
+      role: "admin" 
+    },
+    {
+      id: "user_2",
+      email: "analyst@sohcahtoa.com",
+      password: "analyst123",
+      role: "analyst" 
+    },
+  ]
+
 const resentProjects = [
+
   {
-      id: 1,
+    id: 1,
+    image: Images.sohcahtoa,
+    alt: "SohCahToa",
+    title: "SohCahToa Payout BDC",
+    description: "SohCahToa Payout BDC is a full-stack fintech dashboard that enables role-based payout management, featuring secure authentication with token refresh, optimistic UI updates with rollback on failure, and protected routing for admin and standard user roles.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    live: "https://soh-cah-toa.vercel.app/login" ,
+    github: "https://github.com/feranmi-idowu/Chuks-truemind",
+    note: "login details:  admin@sohcahtoa.com",
+  },
+
+  {
+      id: 2,
       image: Images.invoice,
       alt: "invoiceGen",
       title: "InvoiceGen",
-      description: "A responsive invoice generation app built with React. Users can fill in client details, add line items with quantities and unit prices, and instantly generate a professional invoice — all in the browser ",
+      description: "A responsive invoice generation app built with React. Users can fill in client details, add line items with quantities and unit prices, and instantly generate a professional invoice, all in the browser ",
       stack: ["React (components, useState)","JavaScript", "jsPDF" , "HTML5", "CSS"],
       live: "http://invoice-xi-one.vercel.app/" ,
       github: "https://github.com/feranmi-idowu/Invoice",
   },
 
-
   {
-      id: 2,
-      image: Images.chuks,
-      alt: "ChucksKitchen",
-      title: "Chuks Kitchen",
-      description: "Chuks- kitchen is a food ordering web application that allows users to browse meals, add items to their cart, and place orders through a simple user-friendly interface. ",
-      stack: ["React","JavaScript", "HTML5", "CSS"],
-      live: "https://chuks-truemind-mwht.vercel.app/" ,
-      github: "https://github.com/feranmi-idowu/Chuks-truemind",
-      note: "Available only on desktop, mobile screen next",
-  },
-    
+    id: 3,
+    image: Images.chuks,
+    alt: "ChucksKitchen",
+    title: "Chuks Kitchen",
+    description: "Chuks- kitchen is a food ordering web application that allows users to browse meals, add items to their cart, and place orders through a simple user-friendly interface. ",
+    stack: ["React","JavaScript", "HTML5", "CSS"],
+    live: "https://chuks-truemind-mwht.vercel.app/" ,
+    github: "https://github.com/feranmi-idowu/Chuks-truemind",
+    note: "Available only on desktop, mobile screen next",
+},
+  
 ]
   return (
     <section id="projects"className="projects">
