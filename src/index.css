@@ -157,6 +157,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 20%;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 40rem;
@@ -221,7 +222,7 @@ h2 {
 @media (min-width: 768px) {
   .hero {
     padding-top: 70px;              /* pt-28 */
-    padding-bottom: 3n0px;
+    padding-bottom: 30px;
     gap: auto;
   }
   .hero-image img {
