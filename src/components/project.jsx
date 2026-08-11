@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import Images from "./images";
 
 function Projects() {
   const projects = [
@@ -39,6 +40,8 @@ function Projects() {
 const resentProjects = [
   {
       id: 1,
+      image: Images.invoice,
+      alt: "invoiceGen",
       title: "InvoiceGen",
       description: "A responsive invoice generation app built with React. Users can fill in client details, add line items with quantities and unit prices, and instantly generate a professional invoice — all in the browser ",
       stack: ["React (components, useState)","JavaScript", "jsPDF" , "HTML5", "CSS"],
@@ -49,6 +52,8 @@ const resentProjects = [
 
   {
       id: 2,
+      image: Images.chuks,
+      alt: "ChucksKitchen",
       title: "Chuks Kitchen",
       description: "Chuks- kitchen is a food ordering web application that allows users to browse meals, add items to their cart, and place orders through a simple user-friendly interface. ",
       stack: ["React","JavaScript", "HTML5", "CSS"],
@@ -61,7 +66,7 @@ const resentProjects = [
   return (
     <section id="projects"className="projects">
       <div className="container" >
-        <h2>Ongoing Projects</h2>
+        <h2>Most resent Projects</h2>
         <div className="projects-grid">
           {resentProjects.map((resentprojects) => (
             <motion.div 
@@ -69,33 +74,42 @@ const resentProjects = [
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 300 }}>
               <h3>{resentprojects.title}</h3>
-              <p className="description">{resentprojects.description}</p>
-              <div className="stack">
-                {resentprojects.stack.map((tech) => (
-                  <span key={tech}>{tech}</span>                  
-                ))}
-              </div>
-              <div className="stack">
-                <p className="description">{resentprojects.note}</p>
-              </div>
-              <div className="project-link">
-                <motion.a 
-                href={resentprojects.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }} >Github link <Github size={18}/></motion.a>
-              </div>
-              <div className="project-link">
-              <motion.a href={resentprojects.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }} 
-              >Click to view live project <ExternalLink size={18}/></motion.a>
-              </div>
+
+              <div className="project-layout">
+
+                <div className= "project-img">
+                  <img src={resentprojects.image} alt={resentprojects.alt} />
+                </div>
+                
+                <div className="project-content">
+                  <p>{resentprojects.description}</p>
+                  <div className="stack">
+                    {resentprojects.stack.map((tech) => (
+                      <span key={tech}>{tech}</span>
+                    ))}
+                  </div>
+                  <div className="project-link">
+                    <motion.a 
+                      href={resentprojects.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 300 }}> Github link <Github size={18}/>
+                    </motion.a>
+                  </div>
+                  <div className="project-link">
+                    <motion.a href={resentprojects.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 300 }}> Click to view live project <ExternalLink size={18}/>
+                    </motion.a>
+                  </div>
+                </div>
+                </div>
+
             </motion.div>
           ))}
         </div>
@@ -109,30 +123,39 @@ const resentProjects = [
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}>
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="stack">
-                {project.stack.map((tech) => (
-                  <span key={tech}>{tech}</span>
-                ))}
-              </div>
-              <div className="project-link">
-                <motion.a 
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }} >Github link <Github size={18}/></motion.a>
-              </div>
-              <div className="project-link">
-              <motion.a href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }} 
-              >Click to view live project <ExternalLink size={18}/></motion.a>
-              </div>
+              <div className="project-layout">
+                <div className= "project-img">
+                  <img src={project.image} alt={project.alt} />
+                </div>
+                <div className="project-content">
+                  <p>{project.description}</p>
+                  <div className="stack">
+                    {project.stack.map((tech) => (
+                      <span key={tech}>{tech}</span>
+                    ))}
+                  </div>
+                  <div className="project-link">
+                    <motion.a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 300 }}> Github link <Github size={18}/>
+                    </motion.a>
+                  </div>
+                  <div className="project-link">
+                    <motion.a href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 300 }}> Click to view live project <ExternalLink size={18}/>
+                    </motion.a>
+                  </div>
+                </div>
+                </div>
+              
             </motion.div>
           ))}
         </div>

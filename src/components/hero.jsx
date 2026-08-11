@@ -10,7 +10,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
           className="hero-title">
-            Hi, I'm <span className="highlight">Idowu</span>
+            Hi, I'm <span className="highlight">Idowu Oluwaferanmi</span>
         </motion.h1>
 
         <motion.p
@@ -28,11 +28,15 @@ function Hero() {
           className="hero-animated-text">
             I build clean, responsive, production-ready web apps.
         </motion.p>
-  </div>
-  <div className="hero-image">
-  <img src={Images.overPics} alt="About me" />
-  </div>
-</section>
+      </div>
+      <motion.div 
+        initial={{ opacity: 0, y: 20}}
+        animate={{ opacity: 1, y: 0}}
+        transition={{ delay: 1, duration: 1.2 }}
+        className="hero-image">
+        <img src={Images.overPics} alt="About me" />
+      </motion.div>
+    </section>
 
   );
 }

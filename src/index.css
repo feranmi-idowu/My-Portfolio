@@ -151,34 +151,36 @@ h2 {
 
 /* HERO SECTION */
 .hero {
-  padding-top: 7rem;              /* pt-28 */
-  min-height: 100vh;
   display: flex;
+  padding-top: 20px;              /* pt-28 */
+  max-height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  gap: 3rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40rem;
+  gap: auto;
+  flex-wrap: wrap;
 }
 
 /* INNER CONTENT */
 .hero-content {
-  max-width: 900px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 /* TITLE */
 .hero-title {
-  font-size: 4rem;              /* text-4xl */
+  font-size: 3rem;              /* text-4xl */
   font-weight: 1000;               /* font-extrabold */
   line-height: 1.2;
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3.75rem;            /* md:text-6xl */
-  }
-}
+
 
 /* NAME HIGHLIGHT */
 .highlight {
@@ -197,11 +199,36 @@ h2 {
     font-size: 1.25rem;            /* md:text-xl */
   }
 }
+
+
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+
 .hero-image img {
-  max-width: 400px;  /* Adjust size as needed */
+  margin: 12px auto;
+  max-width: 250px;  /* Adjust size as needed */
   height: auto;
-  border-radius: 5%;  /* Makes the image circular */
-  object-fit: cover;}
+  border-radius: 15%;  /* Makes the image circular */
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 70px;              /* pt-28 */
+    padding-bottom: 3n0px;
+    gap: auto;
+  }
+  .hero-image img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
 
 /* ANIMATED TEXT */
 .hero-animated-text {
@@ -254,6 +281,34 @@ h2 {
   padding: 1.5rem;
   border: 2px #a5b4fc;
   border-radius: 1rem;
+}
+.project-layout{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.project-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  flex: 1;
+}
+
+.project-img img {
+  margin: 12px auto;
+  max-width: 100%;  
+  height: auto;
+  border-radius: 5%;  
+  object-fit: cover;
 }
 .stack {
   display: flex;
