@@ -44,7 +44,7 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="/Oluwaferanmi_Ayobami_Idowu_FD (1).pdf"
+            href="/Oluwaferanmi_Ayobami_Idowu_FD(1).pdf"
             download="Idowu-Oluwferanmi-Resume.pdf"
             className="nav-link"
           >

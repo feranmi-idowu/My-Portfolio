@@ -63,8 +63,9 @@ const resentProjects = [
     description: "SohCahToa Payout BDC is a full-stack fintech dashboard that enables role-based payout management, featuring secure authentication with token refresh, optimistic UI updates with rollback on failure, and protected routing for admin and standard user roles.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     live: "https://soh-cah-toa.vercel.app/login" ,
-    github: "https://github.com/feranmi-idowu/Chuks-truemind",
-    note: "login details:  admin@sohcahtoa.com",
+    github: "https://github.com/feranmi-idowu/SohCahToa",
+    note1: "login details for admin; email: admin@sohcahtoa.com, password: admin123",
+    note2: "login details for analyst; email: analyst@sohcahtoa.com, password: analyst123",
   },
 
   {
@@ -111,6 +112,8 @@ const resentProjects = [
                 
                 <div className="project-content">
                   <p>{resentprojects.description}</p>
+                  <p>{resentprojects.note1}</p>
+                  <p>{resentprojects.note2}</p>
                   <div className="stack">
                     {resentprojects.stack.map((tech) => (
                       <span key={tech}>{tech}</span>
@@ -135,7 +138,12 @@ const resentProjects = [
                       transition={{ type: "spring", stiffness: 300 }}> Click to view live project <ExternalLink size={18}/>
                     </motion.a>
                   </div>
+                  
                 </div>
+                <div className="project-link">
+                    <p>{resentprojects.note1}</p>
+                    <p>{resentprojects.note2}</p>
+                  </div>
                 </div>
 
             </motion.div>
