@@ -138,12 +138,7 @@ const resentProjects = [
                       transition={{ type: "spring", stiffness: 300 }}> Click to view live project <ExternalLink size={18}/>
                     </motion.a>
                   </div>
-                  
                 </div>
-                <div className="project-link">
-                    <p>{resentprojects.note1}</p>
-                    <p>{resentprojects.note2}</p>
-                  </div>
                 </div>
 
             </motion.div>
